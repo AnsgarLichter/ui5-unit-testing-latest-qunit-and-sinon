@@ -18,19 +18,16 @@ QUnit.module("Sample Main controller test", {
 	},
 });
 
-QUnit.test(
-	"The Main controller class has a sayHello method",
-	function (this: TestContext, assert) {
-		const getModelStub = sinon.stub(this.controller, "getModel");
-		getModelStub.withArgs("greeting").returns(this.stubbedJSONModel);
+QUnit.test("sinon v21 is used", function (this: TestContext, assert) {
+	const getModelStub = sinon.stub(this.controller, "getModel");
+	getModelStub.withArgs("greeting").returns(this.stubbedJSONModel);
 
-		this.stubbedJSONModel.getProperty.returns("Hello from sinon v20!");
+	this.stubbedJSONModel.getProperty.returns("Hello from sinon v21!");
 
-		this.controller.getGreeting();
+	this.controller.getGreeting();
 
-		assert.strictEqual(this.controller.getGreeting(), "Hello from sinon v20!");
+	assert.strictEqual(this.controller.getGreeting(), "Hello from sinon v21!");
 
-		// @ts-expect-error sinon fakeXMLHttpRequest is not removed with sinon v20
-		assert.strictEqual(undefined, sinon.fakeXMLHttpRequest);
-	},
-);
+	// @ts-expect-error sinon fakeXMLHttpRequest is removed with sinon v20
+	assert.strictEqual(undefined, sinon.fakeXMLHttpRequest);
+});

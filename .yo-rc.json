@@ -2,11 +2,10 @@
   "generator-ui5-ts-app": {
     "namespace": "com.testing.unit",
     "framework": "SAPUI5",
-    "frameworkVersion": "1.138.0",
+    "frameworkVersion": "1.138.1",
     "author": "Ansgar Lichter, Lukas Riegel",
-    "initrepo": true,
     "tstypes": "@sapui5/types",
-    "tstypesVersion": "1.138.0",
+    "tstypesVersion": "1.138.1",
     "appId": "com.testing.unit",
     "appURI": "com/testing/unit",
     "cdnDomain": "ui5.sap.com",

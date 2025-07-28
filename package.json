@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@openui5/types": "^1.138.0",
-		"@sapui5/types": "1.138.0",
+		"@sapui5/types": "1.138.1",
 		"@types/qunit": "^2.19.12",
 		"@types/sinon": "^17.0.4",
 		"@ui5/cli": "^4.0.8",

@@ -2,7 +2,6 @@ export default {
 	name: "QUnit test suite for the UI5 Application: com.testing.unit",
 	defaults: {
 		page: "ui5://test-resources/com/testing/unit/Test.qunit.html?testsuite={suite}&test={name}",
-		// TODO: CSS does not load
 		qunit: {
 			version: "2.24.1",
 			versions: {
