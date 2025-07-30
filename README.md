@@ -1,5 +1,7 @@
 # ui5-unit-testing-latest-qunit-and-sinon
 
+The detailed guide can be found on SAP Community: [How to use latest QUnit and sinon to test your SAPUI5 applications](https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-latest-qunit-and-sinon-to-test-your-sapui5-applications/ba-p/14156476).
+
 This repository showcases how you can use the latest `qunit` and `sinon` to test your SAPUI5 applications.
 Therefore, this repository contains 2 branches:
 
